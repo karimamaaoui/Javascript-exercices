@@ -9,6 +9,23 @@ function Fibonacci(n)
     return fib
 }
 
+
+function recursiveFibonacci(n)
+{
+    if (n < 2)
+    {
+        return n
+    }
+    return recursiveFibonacci(n-1) + recursiveFibonacci(n-2)
+}
+
+
+
 console.log(Fibonacci(2)) //[0,1]
 console.log(Fibonacci(3)) //[0,1,1]
 console.log(Fibonacci(7)) //[0,1,1,2,3,5,8]
+
+
+console.log(recursiveFibonacci(2)) //0
+console.log(recursiveFibonacci(3)) //1
+console.log(recursiveFibonacci(6)) //8
